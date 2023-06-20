@@ -68,7 +68,7 @@ int main() {
             dst = max(dst, idx);
         }
 
-        if(dst == 0)
+        if(t.size() == 0)
         {
             cout<< a << " ";
             for(int i = 0; i < n - 1; i++) cout<<v[i] <<" ";
