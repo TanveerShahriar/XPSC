@@ -23,4 +23,6 @@ int main() {
 		else cout<<"NO";
 		cout<<"\n";
 	}
+
+    return 0;
 }
