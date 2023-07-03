@@ -20,16 +20,16 @@ int main(){
             if (i <= n-2 && s.substr(i, i+2) == "00")
             {
                 a.pop_back();
-                a.push_back((char) stoi(s.substr(i-1, i+1)) + 96);
+                a.push_back((char) (stoi(s.substr(i-1, i+1)) + 'a' - 1));
             }
             else if(s[i] == '0')
             {
                 if(s[i-1] == '0') continue;
                 a.pop_back();
                 a.pop_back();
-                a.push_back((char) stoi(s.substr(i-2, i)) + 96);
+                a.push_back((char) (stoi(s.substr(i-2, i)) + 'a' - 1));
             }
-            else a.push_back((char) stoi(s.substr(i, i+1)) + 96);
+            else a.push_back((char) (stoi(s.substr(i, i+1)) + 'a' - 1));
         }
 
         for(int i = 0; i < a.size(); i++) cout<<a[i];
